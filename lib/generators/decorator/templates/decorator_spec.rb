@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe <%= class_name %>Form, type: :form do
+RSpec.describe <%= class_name %>Decorator do
   describe '#method' do
     it 'does something' do
       

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe <%= class_name %>Value, type: :policy do
+RSpec.describe <%= class_name %>Value do
   describe '#method' do
     it 'does something' do
       
