@@ -5,7 +5,7 @@ class Rails::ValueGenerator < Rails::Generators::NamedBase
   class_option :test_suite, type: :string, default: 'rspec', desc: 'Test framework to generate test. (rspec or minitest)'
 
   def copy_value_file
-    template 'value.rb', "app/values/#{file_name}_policy.rb"
+    template 'value.rb', "app/values/#{file_name}_value.rb"
   end
 
   def copy_value_test_file
