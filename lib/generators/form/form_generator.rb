@@ -5,7 +5,7 @@ class Rails::FormGenerator < Rails::Generators::NamedBase
   class_option :test_suite, type: :string, default: 'rspec', desc: 'Test framework to generate test. (rspec or minitest)'
 
   def copy_form_file
-    template 'form.rb', "app/forms/#{file_name}_policy.rb"
+    template 'form.rb', "app/forms/#{file_name}_form.rb"
   end
 
   def copy_form_test_file
