@@ -4,11 +4,11 @@ class Rails::DecoratorGenerator < Rails::Generators::NamedBase
   source_root File.expand_path('../templates', __FILE__)
   class_option :test_suite, type: :string, default: 'rspec', desc: 'Test framework to generate test. (rspec or minitest)'
 
-  def copy_value_file
+  def copy_decorator_file
     template 'decorator.rb', "app/decorators/#{file_name}_decorator.rb"
   end
 
-  def copy_value_test_file
+  def copy_decorator_test_file
     if options.test_suite == 'rspec'
       template 'decorator_spec.rb', "spec/decorators/#{file_name}_decorator_spec.rb"
     elsif options.test_suite == 'minitest'
